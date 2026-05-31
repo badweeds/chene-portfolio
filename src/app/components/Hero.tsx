@@ -86,9 +86,9 @@ export function Hero() {
                     width: "8px", 
                     height: "8px",
                     borderRadius: "50%",
-                    background: "#22c55e", // Beautiful bright green color
+                    background: "#22c55e",
                     display: "inline-block",
-                    boxShadow: "0 0 8px rgba(34, 197, 94, 0.5)", // Adds a subtle green glow
+                    boxShadow: "0 0 8px rgba(34, 197, 94, 0.5)",
                   }}
                 />
                 <span
@@ -223,12 +223,12 @@ export function Hero() {
             </FadeUp>
           </div>
 
-          {/* RIGHT SIDE: Profile Image */}
-          <FadeUp delay={0.3} style={{ flex: "0 1 auto" }}>
+          {/* RIGHT SIDE: Profile Image & Resume Button */}
+          <FadeUp delay={0.3} style={{ flex: "0 1 auto", display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
             <div
               style={{
                 width: "clamp(250px, 30vw, 320px)",
-                aspectRatio: "3/4", // Keeps it in a nice portrait ID format
+                aspectRatio: "3/4",
                 borderRadius: "16px",
                 overflow: "hidden",
                 border: "1px solid rgba(180, 165, 148, 0.3)",
@@ -246,6 +246,44 @@ export function Hero() {
                 }}
               />
             </div>
+            
+            {/* NEW: Download Resume Button positioned centrally under the picture */}
+            <a
+              href="/Chene Resume.pdf"
+              download="Chene_Abenoja_Resume.pdf"
+              style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "0.8rem",
+                fontWeight: 500,
+                color: "#6b6b62",
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                transition: "all 0.2s ease",
+                padding: "0.6rem 1.2rem",
+                borderRadius: "999px",
+                border: "1px solid #e0d8cf",
+                background: "transparent",
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLElement).style.color = "#111110";
+                (e.target as HTMLElement).style.borderColor = "#c4b9ae";
+                (e.target as HTMLElement).style.background = "rgba(180, 165, 148, 0.05)";
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLElement).style.color = "#6b6b62";
+                (e.target as HTMLElement).style.borderColor = "#e0d8cf";
+                (e.target as HTMLElement).style.background = "transparent";
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{ pointerEvents: "none" }}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
           </FadeUp>
         </div>
 
