@@ -398,24 +398,26 @@ export function References() {
               onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#9a8c7e")}
             >
               Email
-            </a>
-            <a
-              href="#"
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: "0.78rem",
-                color: "#9a8c7e",
-                textDecoration: "none",
-                transition: "color 0.2s",
-              }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#111110")}
-              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#9a8c7e")}
-            >
-              LinkedIn
-            </a>
-          </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chene-abenoja-89775a167/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.78rem",
+              color: "#9a8c7e",
+              textDecoration: "none",
+              transition: "color 0.2s",
+            }}
+            onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#111110")}
+            onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#9a8c7e")}
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 }
