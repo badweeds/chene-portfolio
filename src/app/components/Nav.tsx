@@ -82,6 +82,34 @@ export function Nav() {
               {link.label}
             </a>
           ))}
+          
+          {/* NEW: Download Resume Link */}
+          <a
+            href="/Chene Resume.pdf"
+            download="Chene_Abenoja_Resume.pdf"
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "0.8rem",
+              fontWeight: 450,
+              color: "#6b6b62",
+              textDecoration: "none",
+              letterSpacing: "0.01em",
+              transition: "color 0.2s",
+              display: "flex",
+              alignItems: "center",
+              gap: "0.3rem",
+            }}
+            onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#111110")}
+            onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#6b6b62")}
+          >
+            Resume
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+
           <a
             href="mailto:abenojachene@gmail.com"
             style={{
