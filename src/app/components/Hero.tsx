@@ -80,13 +80,15 @@ export function Hero() {
                   marginBottom: "2.5rem",
                 }}
               >
+                {/* The Green Dot */}
                 <span
                   style={{
-                    width: "6px",
-                    height: "6px",
+                    width: "8px", 
+                    height: "8px",
                     borderRadius: "50%",
-                    background: "#b4a594",
+                    background: "#22c55e", // Beautiful bright green color
                     display: "inline-block",
+                    boxShadow: "0 0 8px rgba(34, 197, 94, 0.5)", // Adds a subtle green glow
                   }}
                 />
                 <span
