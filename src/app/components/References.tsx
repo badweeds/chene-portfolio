@@ -382,7 +382,7 @@ export function References() {
               letterSpacing: "0.01em",
             }}
           >
-            © {new Date().getFullYear()} Chene D. Abenoja · Davao City, Philippines
+            © {new Date().getFullYear()} Chene D. Abenoja · Davao City, Philippines · Crafted by badweeds
           </p>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             <a
